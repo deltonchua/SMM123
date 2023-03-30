@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Advanced",
+    "price": "$49",
+    "link": "https://buy.stripe.com/8wM4k026U84P5Bm7sE",
+    "details": ["SMM123 WhatsApp software", "Comprehensive user manual"],
+    "image": "/images/advanced.jpeg"
+  },
+  {
+    "name": "Starter",
+    "price": "$499",
+    "link": "https://buy.stripe.com/dR617O12Q70L7JucMZ",
+    "details": [
+      "SMM123 WhatsApp software + 1 day training & workshop",
+      "Comprehensive user manual",
+      "1 SIM card (unlimited numbers)",
+      "* Learning & Workshop"
+    ],
+    "image": "/images/starter.jpeg"
+  },
+  {
+    "name": "Standard",
+    "price": "$899",
+    "link": "https://buy.stripe.com/5kAeYEfXK5WHfbW3cq",
+    "details": [
+      "FB software + 1 day training & workshop",
+      "WA software + 1 day training & workshop",
+      "1 SIM card (unlimited numbers)",
+      "* Learning & Workshop"
+    ],
+    "image": "/images/standard.jpeg"
+  },
+  {
+    "name": "Comprehensive",
+    "price": "$1499",
+    "link": "https://buy.stripe.com/7sIaIocLy4SDgg04gv",
+    "details": [
+      "FB software + 1 day training & workshop",
+      "WA software + 1 day training & workshop",
+      "1 SIM card (unlimited numbers)",
+      "1 Laptop (used)",
+      "1 Android phone (new)",
+      "* Learning & Workshop"
+    ],
+    "image": "/images/comprehensive.jpeg"
+  }
+]

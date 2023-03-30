@@ -1,0 +1,155 @@
+@mixin breakpoint($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin bp-sm {
+  @include breakpoint(640px) {
+    @content;
+  }
+}
+
+@mixin bp-md {
+  @include breakpoint(768px) {
+    @content;
+  }
+}
+
+@mixin bp-lg {
+  @include breakpoint(1024px) {
+    @content;
+  }
+}
+
+@mixin bp-xl {
+  @include breakpoint(1280px) {
+    @content;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include bp-sm {
+    padding: 0 1.5rem;
+  }
+
+  @include bp-md {
+    padding: 0 2rem;
+  }
+}
+
+.main {
+  .hero {
+    max-width: min(45rem, 90%);
+    margin: 0 auto;
+    text-align: center;
+    padding: 6rem 0;
+
+    .img {
+      width: 7rem;
+      height: 7rem;
+      margin: 0 auto 2rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+      @include bp-sm {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 2rem;
+
+      @include bp-sm {
+        font-size: 4rem;
+      }
+
+      @include bp-md {
+        font-size: 6rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      @include bp-sm {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    > * {
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      transition: box-shadow 0.2s ease;
+      background-color: #fff;
+
+      > * {
+        margin-bottom: 2rem;
+      }
+
+      &:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        // margin-bottom: 3rem;
+
+        // @include bp-sm {
+        //   margin-bottom: 4rem;
+        // }
+      }
+
+      .price {
+        font-size: 2rem;
+        font-family: 'Roboto Mono', monospace;
+
+        @include bp-sm {
+          font-size: 3rem;
+        }
+      }
+
+      .details {
+        font-family: 'Roboto Mono', monospace;
+        padding-left: 2rem;
+        list-style: lower-alpha;
+
+        @include bp-sm {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem 0;
+
+  @include bp-sm {
+    font-size: 1.2rem;
+  }
+
+  a {
+    font-weight: 900;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

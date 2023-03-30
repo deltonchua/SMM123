@@ -1,0 +1,7 @@
+/*
+  Content-Security-Policy: default-src 'self'; img-src * data:; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';
+  X-Content-Type-Options: nosniff
+  X-DNS-Prefetch-Control: off
+  X-Download-Options: noopen
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 0
